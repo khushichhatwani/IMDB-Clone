@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function fetchMovieDetails(movieId) {
   const apiKey = "f2b20f92";
-  return fetch(`http://www.omdbapi.com/?i=${movieId}&apikey=${apiKey}`)
+  return fetch(`https://www.omdbapi.com/?i=${movieId}&apikey=${apiKey}`)
     .then((response) => response.json())
     .then((data) => data)
     .catch((error) => console.error("Error fetching movie details:", error));

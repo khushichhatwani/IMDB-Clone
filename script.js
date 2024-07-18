@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Fetching movies from API based on search query
 function fetchMovies(query) {
-  fetch(`http://www.omdbapi.com/?s=${query}&apikey=${apiKey}`)
+  fetch(`https://www.omdbapi.com/?s=${query}&apikey=${apiKey}`)
     .then((response) => response.json())
     .then((data) => {
       if (data.Response === "True") {
